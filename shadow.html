@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow </title>
+    <style>
+        .container {
+            display: flex;
+        }
+        
+        .card {
+            padding: 23px 12px;
+            border: 3px solid rgb(28, 219, 28);
+            margin: 23px 12px;
+            background-color: blanchedalmond;
+            /* when it(box-shadow: ;) is +ve it falls down  */
+            box-shadow: 10px 23px lightgreen;
+            /* when box-shadow: ; it is -ve it falls up  */
+            box-shadow: -10px -23px 10px 4px rgb(161, 29, 49);
+            /*first one is on x axis second one is on y axis  third one is blur radius and forth one is spread radius   */
+            /* if u want bos shadow inside the box then use inset  */
+            box-shadow: inset 3px 5px yellowgreen;
+            /* for multiple shadows  */
+            box-shadow: 3px 5px yellowgreen, 4px 6px blue;
+        }
+        
+        .card h2 {
+            text-shadow: 2px 3px white;
+            text-shadow: 2px 3px 2px rgba(216, 112, 147, 0.733);
+            /* when -ve shadow will goes up  */
+            text-shadow: -2px -3px 2px rgba(216, 112, 147, 0.733);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is CSS course by code with harry </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem vero sed repellat distinctio minus nulla doloremque blanditiis nemo veritatis earum laudantium labore, soluta tempore illum, deleniti animi, quaerat eligendi Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Eius corporis deleniti quasi aliquam repudiandae nesciunt iure quae eaque exercitationem ea distinctio inventore vel placeat ab eligendi minima, perferendis sit itaque..</p>
+
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem perspiciatis iste corrupti aperiam similique id, maiores culpa nulla libero quam. Hic ut eos ullam iusto, maxime quia autem aut.</p>
+
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, fuga nostrum dolorum dolorem tenetur aliquid aspernatur harum voluptatum quos! Vel eaque consectetur culpa laborum, quae consequuntur facere consequatur nulla.</p>
+        </div>
+    </div>
+</body>
+
+</html>

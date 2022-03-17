@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animations and Key Frames </title>
+    <style>
+        .container {
+            /* display: flex; */
+            background-color: greenyellow;
+        }
+        
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: Sania2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-fill-mode: alternate; */
+            /*end tk jayega */
+            /* animation-fill-mode: forwards; */
+            /*jayega then finish*/
+            /* animation-timing-function: ease-in; */
+            /*slow to high*/
+            /* animation-timing-function: ease-out; */
+            /*high to slow */
+            /* animation-timing-function: ease-in-out; */
+            /*slow fast then fir slow*/
+            /* animation-delay: 2s; */
+            /*wait for 2s then start */
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse; */
+            /* Shorthand: */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: Sania2 5s ease-in 1s 12 backwards;
+        }
+        
+        @keyframes Sania2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+        }
+        /* @keyframes Sania-1 {
+            from {
+                width: 200px;
+            }
+        }
+        
+        to {
+            width: 1400px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+</body>
+
+</html>

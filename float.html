@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ALIGNMENT </title>
+    <!-- from google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        /* for any subitem  */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgba(0, 0, 255, 0);
+            /* if we want to center anything then use margin center as auto  */
+            margin: auto;
+        }
+        
+        .item {
+            border: 2px solid greenyellow;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgba(205, 92, 92, 0.308);
+        }
+        
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+        
+        #Computer {
+            float: left;
+            width: 48%;
+        }
+        
+        #Stationary {
+            /* float: left; */
+            width: 100%;
+            /* clear is used when it overlaps then use clear both no one can overlap it  */
+            clear: both;
+        }
+        
+        p,
+        h1 {
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            /* which write in last woh maana jaata hai */
+            text-align: justify;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Grocery items</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit error tenetur numquam perferendis sapiente magnam nobis, laudantium asperiores corporis molestiae, ad qui est provident et quae quo omnis doloribus magni?Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Autem ut dignissimos nobis, distinctio saepe voluptatem sapiente id veniam consectetur? Reiciendis tempora odio aspernatur modi alias eveniet illum error ad quae.
+
+            </p>
+        </div>
+
+    </div>
+    <div class="container">
+        <div id="Computer" class="item">
+            <h3>Computer items</h3>
+            <p id="Computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit error tenetur numquam perferendis sapiente magnam nobis, laudantium asperiores corporis molestiae, ad qui est provident et quae quo omnis doloribus magni?Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. At quam maxime voluptatum suscipit et rem vitae iste sint laborum eveniet.
+
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="Stationary" class="item">
+            <h3>Stationary items</h3>
+            <p id="Stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit error tenetur numquam perferendis sapiente magnam nobis, laudantium asperiores corporis molestiae, ad qui est provident et quae quo omnis doloribus magni?
+
+            </p>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

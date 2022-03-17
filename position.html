@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION ABSOLUT </title>
+    <style>
+        .container {
+            border: 2px solid purple;
+            background-color: rgba(255, 255, 0, 0.349);
+            height: 3444px;
+        }
+        
+        .box {
+            display: inline-block;
+            border: 2px solid greenyellow;
+            width: 150px;
+            height: 150px;
+            /* if we want to add in one line then use inline block */
+            margin: 2px;
+        }
+        
+        #box3 {
+            /*CSS POSITIONS :- by default position is static , absolute , relative , fixed , sticky   */
+            /* RELATIVE : Normal to its position if we want gap in actual position then use relative we can set the top,right,left,bottom that will cause the element to adjust away from the normal position  otherwise use absolute */
+            /* ABSOLUTE:- relative to the parent of its first position  */
+            /* position: relative; */
+            position: absolute;
+            /* top: 34px; */
+            /* left: 34px; */
+            /* FIXED:position the element relative to the browser window use in chat apps */
+            /* position: fixed; */
+            /* right: 4px; */
+            /* bottom: 2px; */
+            /* STICKY :chipka reh jayega upar used in menu apps */
+            /* position: sticky; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3">chat with us </div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+
+</html>
